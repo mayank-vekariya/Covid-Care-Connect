@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slot.mainapi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:padding="9dp"
+            android:text="See Data"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"></TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/round_bg">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <AutoCompleteTextView
+                    android:id="@+id/v_city"
+                    android:layout_width="240dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="12dp"
+                    android:hint="city_name"
+                    android:padding="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:padding="12dp"
+                    android:text="view"
+                    android:onClick="datacity"
+                    android:layout_margin="12dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+
+                </Button>
+
+                <AutoCompleteTextView
+                    android:id="@+id/v_punco"
+                    android:layout_width="240dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="12dp"
+                    android:hint="pincode"
+
+
+                    android:padding="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:padding="12dp"
+                    android:text="view"
+                    android:onClick="datapincode"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    >
+
+                </Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:padding="9dp"
+            android:text="register_with_phone-number"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="12dp"
+            android:padding="12dp"
+            android:inputType="textPersonName"
+            android:hint="phone-number"
+            android:textColor="@color/black"
+            android:background="@drawable/round_bg"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/round_bg">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="240dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="12dp"
+                    android:hint="city-name"
+                    android:padding="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:padding="12dp"
+                    android:text="view"
+                    android:onClick="recity"
+                    android:layout_margin="12dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+
+                </Button>
+
+                <AutoCompleteTextView
+                    android:id="@+id/punco"
+                    android:layout_width="240dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="12dp"
+                    android:hint="pincode"
+
+
+                    android:padding="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:padding="12dp"
+                    android:text="view"
+                    android:onClick="repincode"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    >
+
+                </Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
