@@ -1,7 +1,9 @@
 
 # Covid-All-In-One
 
-It show real time hospital beds, oxygen cylinders and also notify using SMS for covid vaccination slots.
+Covid-All-In-One is a project that provides real-time information on available hospital beds and oxygen cylinders and sends notifications via SMS about Covid vaccination slots. The project uses Python for the back-end and Android for the mobile app, with Firebase serving as the server.
+
+The project has a roadmap for adding more integrations, and it includes features such as a light/dark mode toggle, live previews, fullscreen mode, and cross-platform compatibility.
 
 ## Roadmap
 
